@@ -1,0 +1,60 @@
+.movies__movie {
+  font-family: 'BM';
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  box-shadow: 6px 3px 5px 3px gray;
+}
+
+.movies__movie:nth-child(2n-1) {
+  grid-column: 2 / span 2;
+  width: 580px;
+  height: 270px;
+}
+
+.movies__movie:nth-child(2n-1) .movie__summary {
+  height: 120px;
+  overflow: hidden;
+}
+
+.movies__movie:nth-child(2n) {
+  grid-column: 5 / span 2;
+  width: 530px;
+  height: 220px;
+  margin-left: 50px;
+}
+
+.movies__movie:nth-child(2n) .movie__summary {
+  height: 70px;
+  overflow: hidden;
+}
+
+.movie__data {
+  padding: 30px;
+}
+
+.movie__poster {
+  width: 130px;
+  height: 191px;
+  box-shadow: 6px 3px 5px 3px gray;
+  position: absolute;
+  top: -30px;
+  left: 15px;
+}
+
+.poster__div {
+  position: relative;
+  display: block;
+  margin-right: 140px;
+}
+
+.movie__genres {
+  padding: 0;
+  list-style: none;
+}
+
+.movie__genres li {
+  display: inline;
+  margin-right: 10px;
+}
